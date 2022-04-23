@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 class="heading">Job Details</h1>
+        <form>
+            <table>
+                <tr>
+                    <td class="title">Job Title:</td>
+                    <td>
+                        <input 
+                            type="text" 
+                            name="jobTitle"
+                        >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="textarea">Description:</label>
+                    </td>
+                    <td>
+                        <textarea name="textarea"></textarea>
+                        <p>Brief Description should have atmost 500 characters</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Company Name</td>
+                    <td>
+                        <input 
+                            type="text" 
+                            name="companyName"
+                        >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Contact Number</td>
+                    <td>
+                        <input
+                            type="tel" 
+                            required 
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            name="contactNumber"
+                        >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Contact Person</td>
+                    <td>
+                        <input 
+                            type="text"
+                            name="contactPerson"
+                        >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input 
+                            type="email" 
+                            placeholder="you@example.com"
+                            name="email"
+                            required
+                        >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Work Status:</td>
+                    <td>
+                        <input 
+                            type="radio" 
+                            id="fullTime"
+                            name="workStatus"
+                        >
+                        <lable for="fullTime">Full Time</lable>
+                        <input 
+                            type="radio"
+                            name="workStatus"
+                            id="partTime"
+                        >
+                        <lable for="partTime">Part Time</lable>
+                        <input 
+                            type="radio"
+                            name="workStatus"
+                            id="perDim"
+                        >
+                        <lable for="perDim">Per Dim</lable>
+                        <input 
+                            type="radio"
+                            name="workStatus"
+                            id="others"
+                        >
+                        <lable for="others">Others</lable>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Salary</td>
+                    <td>
+                        <input type="number">
+                        <select>
+                            <option>US Dollar</option>
+                            <option>Euro</option>
+                        </select>
+
+                        <select>
+                            <option>Yearly</option>
+                            <option>Monthly</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Experience(Year)</td>
+                    <td>
+                        <input 
+                            type="number"
+                            required
+                        >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Locations</td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Qualifications</td>
+                    <td>
+                        <select>
+                            <option>Any</option>
+                            <option>High Scool</option>
+                            <option>Associate</option>
+                            <option>Pre Bachelors</option>
+                        </select>
+
+                        <button type="submit">Add>></button>
+                        <button type="submit">Remove>></button>
+                        <textarea  type="textarea" placeholder="Any"></textarea>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="submit">
+                    </td>
+                    <td>
+                        <input type="reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+.heading {
+    text-align: center;
+}
+
+td {
+    border: 1px dotted;
+}
+
+table {
+    border: 2px dotted;
+}
